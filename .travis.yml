@@ -1,7 +1,7 @@
 language: python
 python: "3.5"
 before install:
-  - pip install coveralls
-  - pip install coverage
+  - "pip install coveralls"
+  - "pip install coverage"
 script: coverage run -m unittest
 after_success: coveralls
