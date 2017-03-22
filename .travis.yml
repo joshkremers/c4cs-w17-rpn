@@ -1,5 +1,7 @@
 language: python
 python: "3.5"
-install: "pip install coveralls"
-script: pytest coveralls/test_rpn.py
+install:
+    - pip install pytest pytest-cov
+    - pip install coveralls
+script: pytest
 after_success: coveralls
