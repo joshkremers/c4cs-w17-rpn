@@ -1,6 +1,6 @@
 language: python
 python: "3.5"
 before install:
-    - pip3 install coveralls
+    - pip3 install coverage
 script: coverage --help
 after_success: coveralls
