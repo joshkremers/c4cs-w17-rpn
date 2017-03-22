@@ -2,5 +2,5 @@ language: python
 python: "3.5"
 before install:
     - pip install coveralls
-script: coverage pytest
+script: coverage --help
 after_success: coveralls
